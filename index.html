@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="view port " content="width= device width= intial scale= 1.0">
+    <title> pop-up design</title>
+    <link rel="stylesheet " href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <button type="submit" class="btn" onclick="openPopup()">
+            Submit
+        </button>
+        <div class="popup" id="popup">
+            <img src="tick.png">
+            <h2>Thank You!</h2>
+            <p> Details submitted successfully, thanks :) </p>
+            <button type="button" onclick="closePopup()"> OK </button>
+        </div>
+    </div>
+    <div class="intro" id="intro">
+        <h2> My name is Saloni Shaw. I am a first year undergrad student from the department of Civil Engineering
+            enrolled in its
+            four year course.I am a boarder of Sister Nivedita Hall of Residence.
+            I am from Howrah , West Bengal. My hobbies are sketching and dancing. </h2>
+            <img src ="tajmahal.png">
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup() {
+            popup.classList.add("open-popup");
+        }
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+
+    </script>
+</body>
+
+</html>
